@@ -37,6 +37,8 @@ file(GLOB MIP_SDK_SRC
 
 add_library(MIP_SDK ${MIP_SDK_SRC})
 
+#add_library(MIP_SDK src/MIP_SDK/byteswap_utilities.cpp src/MIP_SDK/mip.cpp src/MIP_SDK/mip_sdk_3dm.cpp src/MIP_SDK/mip_sdk_ahrs.cpp src/MIP_SDK/mip_sdk_base.cpp src/MIP_SDK/mip_sdk_gps.cpp src/MIP_SDK/mip_sdk_interface.cpp src/MIP_SDK/mip_sdk_nav.cpp src/MIP_SDK/mip_sdk_system.cpp src/MIP_SDK/mip_sdk_user_functions.cpp src/MIP_SDK/ring_buffer.cpp)
+
 add_executable(GX3_35_Test src/MIP_SDK/GX3_35_Test.cpp)
 
 target_link_libraries(GX3_35_Test MIP_SDK)
